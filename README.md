@@ -46,6 +46,8 @@
 - @Autowired:
 >*Indica que o Spring deve injetar automaticamente uma dependência no local anotado.*
 
+<br>
+
 ## 📜 B
 - @Bean:
 >*Indica que um método retorna um bean gerenciado pelo Spring.*
@@ -61,6 +63,8 @@
 
 -  @BindingAnnotation:
 >*Usado no Google Guice para definir anotações personalizadas de injeção de dependência.*
+
+<br>
 
 ## 📜 C
 - @Cacheable("nomeCache"):
@@ -87,6 +91,8 @@
 - @CrossOrigin:
 >*Habilita o CORS para permitir requisições de diferentes domínios.*
 
+<br>
+
 ## 📜 D
 - @Data:
 >*Anotação do Lombok que gera automaticamente getters, setters, equals, hashCode e toString.*
@@ -99,6 +105,8 @@
 
 - @Documented:
 >*Indica que a anotação será incluída na documentação do JavaDoc.*
+
+<br>
 
 ## 📜 E
 - @EnableCaching:
@@ -116,9 +124,13 @@
 - @Enumerated(EnumType.STRING):
 >*Define como um enum será persistido no banco de dados.*
 
+<br>
+
 ## 📜 F
 - @Filter:
 >*Define um filtro que pode ser aplicado em requisições HTTP.*
+
+<br>
 
 ## 📜 G
 - @GeneratedValue:
@@ -127,9 +139,13 @@
 - @Getter:
 >*Anotação do Lombok que gera automaticamente um getter para cada campo.*
 
+<br>
+
 ## 📜 H
 - @HandlerMethod:
 >*Define um manipulador de requisições em controllers.*
+
+<br>
 
 ## 📜 I
 - @Id:
@@ -137,6 +153,8 @@
 
 - @Import:
 >*Importa configurações de outras classes para o Spring.*
+
+<br>
 
 ## 📜 J
 - @JoinColumn(name = "coluna"):
@@ -148,6 +166,8 @@
 - @JsonProperty("nome"):
 >*Define um nome alternativo para um campo na serialização JSON.*
 
+<br>
+
 ## 📜 L
 - @Lazy:
 >*Indica que um bean só será inicializado quando for necessário.*
@@ -157,6 +177,8 @@
 
 - @Log4j2:
 >*Anotação do Lombok para configurar automaticamente um logger Log4j2.*
+
+<br>
 
 ## 📜 M
 - @ManyToMany:
@@ -171,6 +193,8 @@
 - @ModelAttribute:
 >*Usado em métodos de controllers para pré-popular um modelo antes de uma requisição.*
 
+<br>
+
 ## 📜 N
 - @NotBlank:
 >*Indica que um campo não pode ser nulo nem vazio.*
@@ -180,6 +204,21 @@
 
 - @NotNull:
 >*Indica que um campo não pode ser nulo.*
+
+<br>
+
+## 📜 O
+
+- @Order:
+>*define a ordem de execução de um componente ou método dentro de um sistema.*
+- @OneToMany:
+>*especifica um relacionamento de banco de dados um-para-muitos.*
+- @OneToOne:
+>*especifica um relacionamento de banco de dados um-para-um.*
+- @Override:
+>*indica que um método em uma classe está substituindo um método da classe pai (superclasse) com o mesmo nome e assinatura.*
+
+<br>
 
 ## 📜 P
 - @PathVariable("id"):
@@ -194,9 +233,13 @@
 - @Primary:
 >*Define um bean como a escolha prioritária quando existem múltiplos candidatos à injeção.*
 
+<br>
+
 ## 📜 Q
 - @Query("SELECT u FROM Usuario u WHERE u.nome = :nome"):
 >*Define uma consulta personalizada no Spring Data JPA.*
+
+<br>
 
 ## 📜 R
 - @Repository:
@@ -214,6 +257,8 @@
 - @RestController:
 >*Combina @Controller e @ResponseBody, tornando os métodos automaticamente JSON.*
 
+<br>
+
 ## 📜 S
 - @Scheduled(cron = "0 0 * * * ?"):
 >*Agenda a execução de um método em intervalos específicos.*
@@ -224,4 +269,48 @@
 - @SpringBootApplication:
 >*Configuração principal do Spring Boot, que ativa @ComponentScan, @EnableAutoConfiguration e @Configuration.*
 
+<br>
+
+## 📜 T
+
+- @TestMethodOrder(MethodOrderer.OrderAnnotation.class):
+>*executa os testes em ordem especificada pela anotação @Order().*
+- @TestMethodOrder(MethodOrderer.MethodName.class):
+>*executa os testes em ordem alfabética pelo nome do método.*
+- @TestMethodOrder(MethodOrderer.Random.class):
+>*executa os testes em ordem aleatória.*
+- @TestMethodOrder(MethodOrderer.DisplayName.class):
+>*executa os testes em ordem especificada pela anotação @DisplayName().*
+- @ToString:
+>*gera uma implementação do método toString.*
+- @ToString.Include:
+>*inclui um campo específico da geração automática do método toString.*
+- @ToString.Exclude:
+>*exclui um campo específico da geração automática do método toString.*
+- @Table:
+>*especifica o nome da tabela principal associada à entidade anotada atualmente.*
+- @Test:
+>*define um método como um teste.*
+- @Transactional:
+>*utilizada nos métodos que requerem transações, garantindo que as operações sejam executadas atomicamente.*
+- @Transient:
+>*indica que um campo não deve ser persistido na base de dados.*
+
+<br>
+
+## 📜 V
+
+- @Valid:
+>*indica que o valor do objeto virá do corpo da requisição e precisa ser validado de acordo com as regras de validação definidas.*
+- @Value:
+>*fornece uma maneira de injetar valores de propriedades em componentes.*
+
+<br>
+
+## 📜 W
+
+- @WithMockUser:
+>*permite a execução de testes usando um usuário fictício autenticado.*
+
+<br>
 
